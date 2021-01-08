@@ -52,7 +52,7 @@ function subscribeRoom(Room: string,  initial: User) {
 
 io.sockets.on('connection', function (socket) {
     console.log('connection:', socket.id );
-    // Подписка на личную комнату
+    // Private room subscription
     socket.on('subscribe', function(data: CreateRoom) {
         console.log('subscribe -> ', data.room);
         subscribeRoom(data.room, data.initial);
@@ -62,14 +62,14 @@ io.sockets.on('connection', function (socket) {
         });
     });
 
-    // Повтор ключа второму пользователю
+    // Resending the key to the second user
     socket.on('repeatkey', function(data: CreateRoom) {
         socket.broadcast.to(data.room).emit('publickey', {
             publickey: data.initial.publicKey
         });
     });
 
-    // Отправка приватных сообщений
+    // Sending private keys
     socket.on('send', function(data: any) {
         console.log('sending -> ', data.room);
         socket.broadcast.to(data.room).emit('private', {
