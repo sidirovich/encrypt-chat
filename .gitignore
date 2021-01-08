@@ -1,0 +1,6 @@
+
+# dependencies
+/frontend/node_modules
+/frontend/public
+
+/server/node_modules

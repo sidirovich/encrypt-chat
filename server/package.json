@@ -1,0 +1,33 @@
+{
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "ts-node index.ts",
+        "dev": "nodemon -x ts-node src/config/server.ts"
+    },
+    "dependencies": {
+        "@koa/cors": "^3.1.0",
+        "@types/express": "^4.17.6",
+        "@types/koa": "^2.11.6",
+        "@types/koa-cors": "^0.0.0",
+        "@types/koa-router": "^7.4.1",
+        "@types/lowdb": "^1.0.9",
+        "@types/node": "^13.13.4",
+        "@types/socket.io": "^2.1.12",
+        "cryptico": "^1.0.2",
+        "expres": "0.0.5",
+        "express": "^4.17.1",
+        "koa": "^2.13.0",
+        "koa-convert": "^1.2.0",
+        "koa-cors": "^0.0.16",
+        "koa-router": "^10.0.0",
+        "koa-session": "^6.1.0",
+        "koa-socket": "^0.1.0",
+        "koa-static": "^5.0.0",
+        "lowdb": "^1.0.0",
+        "node-ts": "^5.1.1",
+        "nodemon": "^2.0.3",
+        "socket.io": "^3.0.4",
+        "ts-node": "^8.10.1",
+        "typescript": "^3.8.3"
+    }
+}

@@ -1,0 +1,150 @@
+body {
+  background-color: #2E3440;
+  color: #E5E9F0;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+.card{
+  background-color: #2E3440;
+  border: none;
+}
+
+.card-body{
+  user-select: none;
+  background-color: #434C5E;
+  border: 2px solid #4C566A;
+  border-radius: 7px;
+  margin: 10px;
+  padding: 1rem;
+}
+
+.form-control {
+  color: #fff;
+  background-color: #5e81ac;
+  outline: none !important;
+}
+
+.form-control {
+  border-color: none;
+  outline: none;
+  box-shadow: none !important; 
+}
+
+.btn-outline-secondary{
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-outline-secondary:hover {
+  color: #fff;
+  background-color: #5e81ac;
+  border-color: #ced4da;
+}
+
+.btn-outline-secondary:focus {
+  outline: none;
+  box-shadow: none !important; 
+}
+
+.t-c{
+  text-align: center;
+}
+
+.form-control::-webkit-input-placeholder { /* Edge */
+  color: #fff;
+}
+
+.form-control::-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #fff;
+}
+
+.autor-name{
+  color: #EBCB8B;
+}
+.badge {
+  font-weight: 400;
+}
+.text-muted{
+  color: #D08770 !important;
+}
+.show{
+  display: block;
+}
+a {
+  color: #ced4da;
+  text-decoration: underline;
+}
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #1f242e;
+  background-clip: padding-box;
+  border: 1px solid #6c757d;
+  border-radius: .3rem;
+  outline: 0;
+}
+.backgound-popup{
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.content-popup{
+  margin: 80px auto 0px auto;
+  width: 600px;
+  padding: 30px;
+  background-color: #1f242e;
+  border: 2px solid;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px #0000001c;
+}
+@media (max-width: 700px) {
+  .content-popup{
+      width: 100%;
+  }
+}
+.input-group .btn {
+  position: relative;
+  z-index: 0;
+}
+
+.scrollbar
+{
+  float: left;
+  height: 450px;
+  width: 100%;
+  background: #343b4a;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+.scrollbar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
