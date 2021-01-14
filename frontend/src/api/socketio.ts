@@ -10,8 +10,8 @@ import {
   SendMessage
 } from './../types/types';
 
-
-const socket = io('http://localhost:3001/');
+//const socket = io('http://localhost:3001/');
+const socket = io('https://encrypt-chat.ru/');
 
 interface User {
   uid: string;

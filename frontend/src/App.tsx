@@ -40,19 +40,19 @@ export default function App() {
     <Router>
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-6 mt-5 t-c">
+          <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12 t-c">
             <div className="row">
-              <div className="col-12 mb-3">
-                <p className="t-c">Typescript Encrypt Chat <small>v0.0.1</small></p>
+              <div className="col-12 mt-2 mb-2">
+                <p className="t-c">Encrypt Chat <small>v0.0.1</small></p>
               </div>
               <div className="col-4">
                 <Link to="/">Home</Link>
               </div>
               <div className="col-4">
-                <Link to="/Settings">Settings</Link>
+                <Link to="/settings">Settings</Link>
               </div>
               <div className="col-4">
-                <Link to="/Guides">Guides</Link>
+                <Link to="/guides">Guides</Link>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function App() {
       </div>
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-6 mt-2">
+          <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12 mt-2">
             <Switch>
               <Route exact path="/">
                 <ChatInterface
@@ -84,6 +84,13 @@ export default function App() {
                 <Guides />
               </Route>
             </Switch>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12 mt-2 mb-2 t-c">
+          <a href="https://github.com/sidirovich/encrypt-chat" target="noopener noreferrer"><p className="muted-text t-c"><small>github Encrypt Chat</small></p></a>
           </div>
         </div>
       </div>

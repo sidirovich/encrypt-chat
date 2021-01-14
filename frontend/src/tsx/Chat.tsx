@@ -110,7 +110,7 @@ export class ChatInterface extends React.Component<Props,State> {
                 <ModalSettings view={ false } />
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-lg-10 col-md-10 col-sm-10 col-10">
+                        <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 mt-3">
                             <div className="scrollbar" id="style-3">
                                 <div className="force-overflow">
                                     <ChatHistory />
@@ -119,7 +119,7 @@ export class ChatInterface extends React.Component<Props,State> {
                         </div>
                     </div>
                     <div className="row justify-content-center">
-                        <div className="col-lg-10 col-md-10 col-sm-10 col-10">
+                        <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
                             <form onSubmit={ this.onSendMessage }>
                                 <p><small>Message:</small></p>
                                 <div className="input-group mb-3">

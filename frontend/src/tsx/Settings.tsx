@@ -67,16 +67,16 @@ export class Settings extends React.Component<Props,State> {
         return (
             <div className="container">
             <div className="row justify-content-center">
-                <div className="col-10">
+                <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
                     <form onSubmit={ this.handleSave }>
                         <div className="row">
-                            <div className="col-12 mt-3">
+                            <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-3">
                                 <p>Encrypt method:</p>
                                 <select className="form-select form-select-sm" defaultValue="CrypticoRSA">
                                     <option value="CrypticoRSA">CrypticoRSA</option>
                                 </select>
                             </div>
-                            <div className="col-12 mt-3">
+                            <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-3">
                                 <p>Username:</p>
                                 <div className="input-group mb-3">
                                     <input className="form-control form-control-sm" type="text" name="username" value={ this.state.username ? this.state.username : '' } onChange={ this.handleChangeInput } />
